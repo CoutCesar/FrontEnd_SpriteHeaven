@@ -1,0 +1,332 @@
+/*////////////////////////////////////////////////////////////////////////////////////*/
+/* Diseños para el encabezado */
+.Encabezado
+{
+    background-color: #002f62;
+    width: 100%;
+}
+
+/* Estilo de la parte superior del encabezado */
+.EncabezadoCentro 
+{
+    display: flex;
+}
+
+/* Estilo para la imagen Logotipo */
+.Logo
+{
+    width: 165px;
+    height: 43px;
+}
+
+/* Estilo para el area de la busqueda */
+.AreaBusqueda 
+{
+    flex: 85%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #002f62;
+    display: flex;
+}
+
+.AreaBusqueda form 
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo de la Barra de busqueda */
+.BarraBusqueda 
+{
+    display: flex;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Estilo del Texto de la Barra de Busqueda */
+.BarraBusqueda input[type="text"] 
+{
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo del botón del boton */
+.BarraBusqueda button 
+{
+    background-color: #ff5131;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Diseño de la NavBar */
+.NavBar
+{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #002f62;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////*/
+/* Diseño para el cuerpo de la pagina */
+.ImagenesCompra 
+{
+    display: flex; /* Por defecto en pantallas más grandes */
+}
+
+/* En pantallas más pequeñas, cambia la dirección de flexión y el orden */
+@media (max-width: 768px) 
+{
+    .ImagenesCompra 
+    {
+        flex-direction: column;
+    }
+
+    /* Cambia el orden de 'Compra' y 'Imagenes' */
+    .Compra 
+    {
+        order: 1;
+    }
+
+    .Imagenes 
+    {
+        order: 2;
+    }
+
+    /* Cambia el ancho al 100% para '.Imagenes' y '.Compra' */
+    .Imagenes, .Compra 
+    {
+        width: 100%;
+    }
+}
+
+/* Diseño del carrusel */
+.Imagenes 
+{
+    width: 50%;
+    padding-left: 10px;
+    min-width: 400px; /* Ajusta este valor según tus necesidades */
+}
+
+/* Diseño del apartado de Compras */
+.Compra 
+{
+    width: 50%;
+    min-width: 400px;
+    padding-left: 10px;
+}
+
+/* Diseño del apartado de la Descripcion */
+.Descripcion 
+{
+    margin: 0 auto;
+    padding-left: 10px;
+    width: 90%;
+}
+
+.Carrusel 
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 350px;
+}
+
+.Botones 
+{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.BotonCarrito
+{
+    margin: 5px 0; /* Espacio vertical entre los botones */
+    background-color: lightgray; /* Color de fondo para Comprar */
+    color: #002f62; /* Color de texto para Comprar */
+    padding: 10px 20px; /* Espaciado interno para Comprar */
+    border: none; /* Sin borde */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado de texto */
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%;
+}
+
+.BotonComprar 
+{
+    margin: 5px 0; /* Espacio vertical entre los botones */
+    background-color: #002f62; /* Color de fondo para Comprar y Carrito */
+    color: white; /* Color de texto para Comprar y Carrito */
+    padding: 10px 20px; /* Espaciado interno para Comprar y Carrito */
+    border: none; /* Sin borde */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado de texto */
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%; /* Establecer el ancho al 100% para ambos botones */
+}
+
+/* Diseño de los contenedores */
+.Contenedor 
+{
+    padding: 10px;
+}
+
+.TituloProducto 
+{
+    color: #002f62;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /*Fuente de GoogleFonts*/
+    font-size: 16px;
+}
+
+.Subtitulos 
+{
+    color: #002f62;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /*Fuente de GoogleFonts*/
+}
+
+.Precio
+{
+    color: #ff510e;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif; /*Fuente de GoogleFonts*/
+}
+
+.Texto
+{
+    font-family: 'Poppins', sans-serif; /*Fuente de GoogleFonts*/
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////*/
+/* Diseño del Encabezado */
+header 
+{
+    height: 110px;
+}
+
+/* Diseño del Cuerpo */
+body 
+{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establece la altura mínima para llenar la ventana */
+}
+
+/* Diseño del Pie */
+footer 
+{
+    background-color: #0b0c10;
+    color: #6a6a69;
+    font-family: 'Poppins', sans-serif; /* Fuente de GoogleFonts */
+    margin-top: auto; /* Empuja el footer hacia la parte inferior */
+    padding: 20px; /* Añade un poco de espacio en el footer */
+    text-align: center; /* Alinea el contenido del footer al centro */
+}
+
+.TextoVivnulo
+{
+    background-color: #0b0c10;
+    color: #6a6a69;
+    font-family: 'Poppins', sans-serif; /* Fuente de GoogleFonts */
+    margin-top: auto; /* Empuja el footer hacia la parte inferior */
+    text-align: center;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////*/
+/* Estilos para ocultar el modal por defecto */
+.Modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.BarraTexto
+{
+    padding: 3%;
+    border: 1px solid #002f62;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; /*Fuente de GoogleFonts*/
+}
+
+.MiniTexto
+{
+    font-family: 'Poppins', sans-serif; /*Fuente de GoogleFonts*/
+    color: #ff510e;
+    font-size: 16px;
+}
+
+.modal 
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 999; /* Asegura que el modal esté en la parte superior */
+    pointer-events: none; /* Evita que el modal intercepte eventos de ratón */
+}
+
+.modal-content 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; /* Fondo del modal */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para el modal */
+    z-index: 1000; /* Asegura que el contenido del modal esté en la parte superior */
+    pointer-events: auto; /* Permite que el contenido del modal reciba eventos de ratón */
+}
+
+.AcercaDe
+{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.Mapa
+{
+    text-align: center; /* Alineación horizontal */
+    padding: 20px;
+  }
+  
+  
+  
+  
+  
+  

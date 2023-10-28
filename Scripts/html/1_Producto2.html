@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="TituloPagina" >Producto</title>
+        <link rel="stylesheet" type="text/css" href="/Scripts/Css/2_DiseñoProducto.css">
+        <link rel="icon" type="image/x-icon" href="/Images/Icono_PlaceHolders.ico">
+    </head>
+
+    <!--Encabezado-->
+    <header>
+        <div class="Encabezado">
+            <div class="EncabezadoCentro">
+                <div>
+                    <img class="Logo" src="/Images/Logo_PlaceHolder.png" alt="Logotipo_PlaceHolder">
+                </div>
+    
+                <div class="AreaBusqueda">
+                    <form action="/buscar" method="get">
+                        <div class="BarraBusqueda">
+                            <input type="text" name="q" placeholder="Buscar...">
+                            <button type="submit">Buscar</button>
+                        </div>
+                    </form>                    
+                </div>
+            </div>
+        <div class="NavBar" id="InstanciaNavBar"></div>
+    </header>
+
+    <!--Carrucel-->
+    <body>
+        <div>
+            <!--Instancia al codigo del carrucel-->
+            <div class="ImagenesCompra">
+                <div class="Imagenes">
+                    <div class="Contenedor">
+                        <iframe class="Carrusel" src="/Scripts/html/1_Carrusel2.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <!--Componentes de compra-->
+                <div class="Compra">
+                    <div class="Contenedor">
+                        <div class="Titulo">
+                            <h3 class="TituloProducto">Pack de Cactus Pitayo 3D</h3>
+                            <h2 class="Precio">$80.0</h2>
+                        </div>
+
+                        <div class="Botones">
+                            <button id="Comprar" class="BotonComprar" data-product-id="2" type="button">Comprar</button>
+                            <button id="Carrito" class="BotonCarrito" data-product-id="2" type="button">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <!--Descripcion del producto-->
+            <div class="Descripcion">
+                <div class="Contenedor">
+                    <p class="Subtitulos">Descripcion del Producto</p>
+                    <p class="Texto">Embellece tus mundos virtuales con nuestro impresionante Pack de Modelos 3D de Cactus Pitayo. Diseñados meticulosamente y optimizados para brindar un rendimiento excepcional en juegos, estos cactus pitayo te permitirán llevar la autenticidad y la belleza del desierto a tus proyectos de videojuegos.</p>
+                    <br>
+            
+                    <p class="Subtitulos">Características Destacadas:</p>
+                    <p class="Texto">1. **Calidad Visual Impresionante**: Nuestros modelos 3D de cactus pitayo están creados con una atención excepcional a los detalles. Cada espina, curva y pliegue se ha recreado fielmente para ofrecer una experiencia visual realista y envolvente.</p>
+                    <p class="Texto">2. **Texturas de Alta Resolución**: Hemos incluido texturas de alta resolución que hacen que estos cactus pitayo se vean increíblemente reales. Los detalles intrincados de las espinas y la piel rugosa de los cactus son visibles en todo su esplendor.</p>
+                    <p class="Texto">3. **Optimización para Juegos**: Sabemos lo importante que es el rendimiento en los juegos. Nuestros modelos 3D de cactus pitayo están optimizados para funcionar sin problemas en una amplia variedad de motores de juego. Esto significa que puedes incorporarlos en tu juego sin preocuparte por problemas de rendimiento.</p>
+                    <p class="Texto">4. **Variedad de Tamaños y Formas**: Nuestro paquete incluye una variedad de modelos de cactus pitayo con diferentes tamaños y formas. Esto te permite crear paisajes desérticos diversificados y únicos en tus juegos.</p>
+                    <p class="Texto">5. **Fácil de Integrar**: Los modelos 3D se entregan en formatos compatibles con los motores de juego más populares, lo que facilita su integración en tu proyecto.</p>
+                    <p class="Texto">6. **Licencia Flexible**: Ofrecemos una licencia flexible que te permite utilizar estos modelos en proyectos personales y comerciales, lo que te da la libertad de dar vida a tus ideas creativas sin limitaciones.</p>
+            
+                    <p class="Texto">Añade un toque de realismo y autenticidad a tus juegos con nuestros Modelos 3D de Cactus Pitayo. Desde escenarios de aventuras en el desierto hasta simulaciones de vida en entornos áridos, estos cactus pitayo transformarán tus proyectos en experiencias visuales excepcionales.</p>
+                    <p class="Texto">¡No dejes pasar esta oportunidad para llevar tus juegos al siguiente nivel! Adquiere hoy nuestro Pack de Modelos 3D de Cactus Pitayo y crea mundos virtuales deslumbrantes y únicos.</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer>
+            <a class="TextoVivnulo" href="/Scripts/html/1_Informacion.html">Informacion de la empresa</a>
+            <p>Pagina desarrollada por César Eduardo López Baltazar</p>
+            <p>Por favor, denme trabajo :c</p>
+        </footer>
+
+        <!--Codigo del modal-->
+        <div id="ModalRegistro" class="Modal">
+            <div class="modal-content">
+                <p class="TituloProducto">Nuevo usuario</p>
+                <p class="Texto">Nombre</p>
+                <input class="BarraTexto" type="text" id="Nombre" name="nombre" required><br><br>
+
+                <p class="Texto">Correo</p>
+                <input class="BarraTexto" type="email" id="Correo" name="email" required><br><br>
+
+                <p class="Texto">Contraseña</p>
+                <input class="BarraTexto" type="password" id="Contrasena" name="contrasena" required><br><br>
+
+                <p class="Texto">Confirmar contraseña</p>
+                <input class="BarraTexto" type="password" id="Contrasena2" name="confirmar_contrasena" required><br><br>
+
+                <p class="MiniTexto" id="Error"></p>
+
+                <button class="BotonComprar" id="Registrar" value="1">Registrar</button>
+                <button class="BotonCarrito" id="Cancelar">Cancelar</button>
+            </div>
+        </div>
+
+        <div class="ModalMensaje" id="mensaje" style="display: none;"></div>
+
+        <script src="/Scripts/Js/3_Modal.js"></script>
+        <script src="/Scripts/Js/3_InstanciaVavBar.js"></script>
+    </body>
+</html>

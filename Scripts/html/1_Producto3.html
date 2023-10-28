@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="TituloPagina" >Producto</title>
+        <link rel="stylesheet" type="text/css" href="/Scripts/Css/2_DiseñoProducto.css">
+        <link rel="icon" type="image/x-icon" href="/Images/Icono_PlaceHolders.ico">
+    </head>
+
+    <!--Encabezado-->
+    <header>
+        <div class="Encabezado">
+            <div class="EncabezadoCentro">
+                <div>
+                    <img class="Logo" src="/Images/Logo_PlaceHolder.png" alt="Logotipo_PlaceHolder">
+                </div>
+    
+                <div class="AreaBusqueda">
+                    <form action="/buscar" method="get">
+                        <div class="BarraBusqueda">
+                            <input type="text" name="q" placeholder="Buscar...">
+                            <button type="submit">Buscar</button>
+                        </div>
+                    </form>                    
+                </div>
+            </div>
+        <div class="NavBar" id="InstanciaNavBar"></div>
+    </header>
+
+    <!--Carrucel-->
+    <body>
+        <div>
+            <div class="ImagenesCompra">
+                <div class="Imagenes">
+                    <div class="Contenedor">
+                        <!--Instancia al carrucel-->
+                        <iframe class="Carrusel" src="/Scripts/html/1_Carrusel3.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <!--Componentes de compra-->
+                <div class="Compra">
+                    <div class="Contenedor">
+                        <div class="Titulo">
+                            <h3 class="TituloProducto">Plantilla para targeta de presentación moderna</h3>
+                            <h2 class="Precio">$10.0</h2>
+                        </div>
+
+                        <div class="Botones">
+                            <button id="Comprar" class="BotonComprar" data-product-id="3" type="button">Comprar</button>
+                            <button id="Carrito" class="BotonCarrito" data-product-id="3" type="button">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <!--Descripcion del producto-->
+            <div class="Descripcion">
+                <div class="Contenedor">
+                    <p class="Subtitulos">Descripción de la Plantilla</p>
+                    <p class="Texto">Impresiona a tus contactos profesionales con nuestra Plantilla de Tarjeta de Presentación Moderna. Diseñada para destacar y dejar una impresión duradera, esta plantilla combina elegancia, estilo y profesionalismo en un único paquete.</p>
+                    <br>
+            
+                    <p class="Subtitulos">Características Destacadas:</p>
+                    <p class="Texto">Diseño Contemporáneo:</strong> Nuestra plantilla de tarjeta de presentación moderna presenta un diseño limpio y contemporáneo que se adapta a una amplia gama de industrias y profesiones. Refleja tu enfoque en el futuro y tu compromiso con la innovación.</p>
+                    <p class="Texto">Personalización Sencilla:</strong> Con un diseño de fácil personalización, puedes agregar tu información personal y de contacto en cuestión de minutos. Añade tu nombre, título, logotipo y detalles de contacto de manera sencilla para crear una tarjeta única que te represente.</p>
+                    <p class="Texto">Calidad Profesional:</strong> La calidad de impresión de esta plantilla garantiza que tus tarjetas de presentación se vean profesionales y nítidas. Deja una impresión duradera en tus clientes, socios y colegas.</p>
+                    <p class="Texto">Versatilidad:</strong> Esta plantilla es versátil y se adapta tanto a profesionales individuales como a empresas. Es ideal para presentaciones en reuniones, ferias comerciales y eventos de networking.</p>
+                    <p class="Texto">Formato Digital y de Impresión:</strong> La plantilla está disponible en formatos digitales editables y listos para imprimir. Esto significa que puedes imprimir tus tarjetas en casa o en una imprenta profesional, según tus necesidades.</p>
+            
+                    <p class="Texto">Esta Plantilla de Tarjeta de Presentación Moderna es la elección perfecta para aquellos que desean destacar en el mundo de los negocios. Refleja tu estilo y profesionalismo con una tarjeta que capta la esencia de la modernidad. Simplifica la forma en que te presentas y abre las puertas a nuevas oportunidades.</p>
+                    <p class="Texto">Actualiza tu imagen profesional con esta elegante plantilla y asegura que tu primera impresión sea memorable y exitosa. ¡Añádela a tu kit de herramientas empresariales hoy mismo!</p>
+                </div>
+            </div>            
+            </div>                     
+        </div>
+            
+        </div>
+
+        <footer>
+            <a class="TextoVivnulo" href="/Scripts/html/1_Informacion.html">Informacion de la empresa</a>
+            <p>Pagina desarrollada por César Eduardo López Baltazar</p>
+            <p>Por favor, denme trabajo :c</p>
+        </footer>
+
+        <div id="ModalRegistro" class="Modal">
+            <div class="modal-content">
+                <p class="TituloProducto">Nuevo usuario</p>
+                <p class="Texto">Nombre</p>
+                <input class="BarraTexto" type="text" id="Nombre" name="nombre" required><br><br>
+
+                <p class="Texto">Correo</p>
+                <input class="BarraTexto" type="email" id="Correo" name="email" required><br><br>
+
+                <p class="Texto">Contraseña</p>
+                <input class="BarraTexto" type="password" id="Contrasena" name="contrasena" required><br><br>
+
+                <p class="Texto">Confirmar contraseña</p>
+                <input class="BarraTexto" type="password" id="Contrasena2" name="confirmar_contrasena" required><br><br>
+
+                <p class="MiniTexto" id="Error"></p>
+
+                <button class="BotonComprar" id="Registrar" value="1">Registrar</button>
+                <button class="BotonCarrito" id="Cancelar">Cancelar</button>
+            </div>
+        </div>
+
+        <div class="ModalMensaje" id="mensaje" style="display: none;"></div>
+
+        <script src="/Scripts/Js/3_Modal.js"></script>
+        <script src="/Scripts/Js/3_InstanciaVavBar.js"></script>
+    </body>
+</html>

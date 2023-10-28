@@ -1,0 +1,11 @@
+/*Ajusta el tamaño de las imagenes*/
+.Imagenes
+{
+    width: 350px;
+    height: 350px;
+}
+
+body
+{
+    padding: 0%;
+}

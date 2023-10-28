@@ -1,0 +1,39 @@
+/* Estilo para los Elementos de la NavBar */
+.navbar-nav 
+{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Espacio entre elementos de la NavBar */
+.nav-item 
+{
+    margin-right: 30px;
+}
+
+/* Estilo para lo el texto de la NavBar */
+.nav-link 
+{
+    color: #19c4ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+    font-family: 'Poppins', sans-serif; /*Fuente de GoogleFonts*/
+}
+
+.nav-link:hover 
+{
+    color: #29d7ff;
+}
+
+/* Le quita las viñetas a los elementos de la NavBar */
+.navbar-nav .nav-item 
+{
+    list-style: none;
+}
+
+body
+{
+    padding: 0px;
+}

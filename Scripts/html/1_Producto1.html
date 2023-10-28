@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="TituloPagina">Producto</title>
+    <link rel="stylesheet" type="text/css" href="/Scripts/Css/2_DiseñoProducto.css">
+    <link rel="icon" type="image/x-icon" href="/Images/Icono_PlaceHolders.ico">
+</head>
+
+<body>
+    <!--Codigo del encabezado-->
+    <header>
+        <div class="Encabezado">
+            <div class="EncabezadoCentro">
+                <div>
+                    <img class="Logo" src="/Images/Logo_PlaceHolder.png" alt="Logotipo_PlaceHolder">
+                </div>
+
+                <div class="AreaBusqueda">
+                    <form action="/buscar" method="get">
+                        <div class="BarraBusqueda">
+                            <input type="text" name="q" placeholder="Buscar...">
+                            <button type="submit">Buscar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="NavBar" id="InstanciaNavBar"></div>
+    </header>
+
+    <!--Cuerpo de la pagina-->
+    <div>
+        <!--Codigo del carrucel-->
+        <div class="ImagenesCompra">
+            <div class="Imagenes">
+                <div class="Contenedor">
+                    <!--Instancia al codigo html del carrucel-->
+                    <iframe class="Carrusel" src="/Scripts/html/1_Carrusel.html" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <!--Parte de componentes de compra-->
+            <div class="Compra">
+                <div class="Contenedor">
+                    <div class="Titulo">
+                        <h3 class="TituloProducto">Pack de Espadas Pixel Art</h3>
+                        <h2 class="Precio">$10.0</h2>
+                    </div>
+
+                    <div class="Botones">
+                        <button id="Comprar" class="BotonComprar" data-product-id="1" type="button">Comprar</button>
+                        <button id="Carrito" class="BotonCarrito" data-product-id="1" type="button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Descripcion del producto-->
+        <div class="Descripcion">
+            <div class="Contenedor">
+                <p class="Subtitulos">Descripcion del Producto</p>
+                <p class="Texto">Sumérgete en el emocionante mundo del pixelart con nuestro Pack de Espadas Pixelart para Videojuegos. Este paquete exclusivo de recursos gráficos está diseñado para dar vida a las armas de tus personajes en tu juego con un estilo visual encantador y nostálgico.</p>
+                <br>
+
+                <p class="Subtitulos">Contenido del Pack:</p>
+                <p class="Texto">Espada de Hierro: Forjada con precisión, esta espada de hierro pixelart presenta un diseño clásico que evoca la esencia de la fantasía. Cada detalle meticuloso, desde la hoja afilada hasta la empuñadura ornamentada, hará que tus personajes destaquen en la batalla.</p>
+                <p class="Texto">Espada de Tungsteno: La elegancia se combina con la fuerza en esta majestuosa espada de tungsteno pixelart. Sus detalles relucientes y su diseño único añaden un toque de sofisticación a tus héroes, mientras que su metal resistente garantiza golpes poderosos y elegantes.</p>
+                <p class="Texto">Espada de Diamante: Para aventuras de alto nivel, la espada de diamante pixelart es la elección perfecta. Con su brillo cristalino y nitidez incomparable, esta arma es el epítome del lujo en la batalla. Los detalles pixelados realzan su deslumbrante aspecto.</p>
+                <br>
+
+                <p class="Subtitulos">Características:</p>
+                <p class="Texto">
+                    &bull; Gráficos pixelart de alta calidad que se integran perfectamente en entornos de juegos retro o modernos.<br><br>
+                    &bull; Tres tipos de espadas únicas, cada una con su propio encanto y estilo distintivo.<br><br>
+                    &bull; Archivos gráficos listos para ser implementados en tu videojuego sin esfuerzo, lo que ahorra tiempo y esfuerzo en desarrollo.<br><br>
+                    &bull; Escala y resolución ajustables para adaptarse a las necesidades de tu proyecto.<br><br>
+                    Este pack de espadas pixelart es una adición imprescindible para desarrolladores de videojuegos que desean mejorar la experiencia visual de combate en sus juegos. ¡Dale a tus personajes armas excepcionales y lleva la estética pixelart a nuevas alturas en tu proyecto de juego!<br><br>
+                    Añade el Pack de Espadas Pixelart para Videojuegos a tu colección de recursos gráficos y dale a tus personajes las armas que merecen.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a class="TextoVivnulo" href="/Scripts/html/1_Informacion.html">Informacion de la empresa</a>
+        <p>Pagina desarrollada por César Eduardo López Baltazar</p>
+        <p>Por favor, denme trabajo :c</p>
+    </footer>
+
+    <!--Codigo del modal-->
+    <div id="ModalRegistro" class="Modal">
+        <div class="modal-content">
+            <p class="TituloProducto">Nuevo usuario</p>
+            <p class="Texto">Nombre</p>
+            <input class="BarraTexto" type="text" id="Nombre" name="nombre" required><br><br>
+
+            <p class="Texto">Correo</p>
+            <input class="BarraTexto" type="email" id="Correo" name="email" required><br><br>
+
+            <p class "Texto">Contraseña</p>
+            <input class="BarraTexto" type="password" id="Contrasena" name="contrasena" required><br><br>
+
+            <p class "Texto">Confirmar contraseña</p>
+            <input class="BarraTexto" type="password" id="Contrasena2" name="confirmar_contrasena" required><br><br>
+
+            <p class="MiniTexto" id="Error"></p>
+
+            <button class="BotonComprar" id="Registrar" value="1">Registrar</button>
+            <button class="BotonCarrito" id="Cancelar">Cancelar</button>
+        </div>
+    </div>
+
+    <div class="ModalMensaje" id="mensaje" style="display: none;"></div>
+
+    <script src="/Scripts/Js/3_Modal.js"></script>
+    <script src="/Scripts/Js/3_InstanciaVavBar.js"></script>
+</body>
+
+</html>
